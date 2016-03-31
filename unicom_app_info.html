@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+   <title>模版</title>
+   <link href="css/bootstrap.min_unicom_app.css" rel="stylesheet">
+   <link href="css/unicom_controlStyles.css" rel="stylesheet">
+
+   <script src="js/jquery-2.2.0.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/dataControl.js"></script>
+   <script src="js/unicom_info.js"></script>
+</head>
+<body>
+   <div class="wrap">
+      <div class="main clearfix">
+         <div class="header">
+            <div class="container">
+               <img src="img/unicom_logo.png">
+            </div>
+         </div>
+
+         <!--Page content-->
+         <div class="container Style_container">
+            <div class="row Style_row1">
+               <div class="col-md-2 col-sm-4 col-xs-4 text-center" id="info_logo">
+                  <img class="img-rounded app_Logo" src="img/QR_Code.png">
+               </div>
+               <div class="col-md-6 col-sm-8 col-xs-8" id="info_title">
+                  <h1 class="no-top-margin">模版</h1>
+                  <span class="badge bg_badge0">模版</span>
+               </div>
+               <div class="col-md-4 col-sm-12 col-xs-12 text-center" id="info_QR">
+
+               </div>
+            </div>
+            <div class="row Style_row2">
+               <div class="col-md-6 col-sm-6 col-xs-6" id="info_description">
+                  <div class="Style_info_description">
+                     <p>模版</p>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-6 col-xs-6">
+                  <div id="app_info_Carousel" class="carousel slide">
+                     <!-- Carousel指标 -->
+                     <ol class="carousel-indicators" id="carousel_ol">
+                        <li data-target="#app_info_Carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#app_info_Carousel" data-slide-to="1"></li>
+                        <li data-target="#app_info_Carousel" data-slide-to="2"></li>
+                     </ol>   
+                     <!-- Carousel项目 -->
+                     <div class="carousel-inner" id="carousel_img">
+                        <div class="item active">
+                           <img src="img/QR_Code.png">
+                        </div>
+                        <div class="item">
+                           <img src="img/QR_Code.png">
+                        </div>
+                        <div class="item">
+                           <img src="img/QR_Code.png">
+                        </div>
+                     </div>
+                     <!-- Carousel导航 -->
+                     <a class="carousel-control left" href="#app_info_Carousel" 
+                        data-slide="prev">&lsaquo;</a>
+                     <a class="carousel-control right" href="#app_info_Carousel" 
+                        data-slide="next">&rsaquo;</a>
+                  </div> 
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+<!--footer-->
+   <div class="footer">
+      <div class="container">
+         <p class="credit">Copyright for MT,CHP & MovieKing.</p>
+      </div>
+   </div>
+</body>
+</html>

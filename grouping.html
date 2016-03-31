@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+   <title>创建参赛分组</title>
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/controlStyles.css" rel="stylesheet">
+   <link href="css/grouping_scroll.css" rel="stylesheet">
+
+   <script src="js/jquery-2.2.0.js"></script>
+   <script src="js/dataControl.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/grouping.js"></script>
+   <script src="js/iscroll4.js"></script>
+   <!-- // <script src="http://statics.webkfa.com/js/iscroll.js"></script> -->
+   <script src="js/grouping_scroll.js"></script>
+</head>
+<body>
+   <!--wrap start-->
+   <div class="wrap">
+      <div class="main clearfix">
+         <!--Navbar-->
+         <header>
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+               <div class="container">
+                  <div class="navbar-header">
+                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                     </button>
+                     <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-home"></span>桥牌之家</a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="mainnav-collapse">
+                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="newGame.html">比赛创建</a></li>
+                        <li><a href="grouping.html">比赛分组</a></li>
+                        <li><a href="#">比赛列表</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </header>
+         <!--Page content-->
+         <div class="container">
+            <div class="row index_grouping">
+               <div class="scroller col-md-12 col-sm-12 col-xs-12" id="grouping_scroller_groups">
+                  <div>
+                     <div id="pullDown">
+                        <span class="glyphicon glyphicon-arrow-down"></span><span class="pullDownLabel">Pull down to refresh...</span>
+                     </div>
+                     <ul class="list-group" id="grouping_ul_groups">
+                        <li class="list-group-item row" data-teamid="test">
+                           <div class="col-md-12 col-sm-12 col-xs-12">
+                              <strong class="teamName">MS08小队：</strong>
+                              <strong class="playerName" data-mateid="test" data-toggle="modal" data-target="#modal_miniMenu">石祥仁</strong>
+                              <strong class="playerName" data-mateid="test" data-toggle="modal" data-target="#modal_miniMenu">石祥仁复制人1</strong>
+                              <strong class="playerName" data-mateid="test" data-toggle="modal" data-target="#modal_miniMenu">石祥仁复制人2</strong>
+                              <strong class="playerName" data-mateid="test" data-toggle="modal" data-target="#modal_miniMenu">石祥仁复制人3</strong>
+                              <strong class="playerName" data-mateid="test" data-toggle="modal" data-target="#modal_miniMenu">石祥仁复制人4</strong>
+                              <strong class="playerName" data-mateid="test" data-toggle="modal" data-target="#modal_miniMenu">石祥仁复制人5</strong>
+                              <strong class="playerName" data-mateid="test" data-toggle="modal" data-target="#modal_miniMenu">石祥仁复制人6</strong>
+                              <strong class="playerName" data-mateid="test" data-toggle="modal" data-target="#modal_miniMenu">石祥仁复制人7</strong>
+                              <strong class="playerName" data-mateid="test" data-toggle="modal" data-target="#modal_miniMenu">石祥仁复制人8</strong>
+                              <strong class="playerNameEnd" data-mateid="test" data-toggle="modal" data-target="#modal_miniMenu">石祥仁复制人9</strong>
+                              <div class="addPlayer" data-toggle="modal" data-target="#modal_playerList">
+                                 <span name="num1" class="glyphicon glyphicon-plus"></span>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="col-md-6 col-sm-6 col-xs-6">
+                        <button type="button" class="btn btn-default  btn-block btn-md" name="btn_login">完成</button>
+                     </div>
+                     <div class="col-md-6 col-sm-6 col-xs-6">
+                        <button type="button" class="btn btn-primary  btn-block btn-md" name="btn_back">返回</button>
+                     </div>
+                     
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--wrap end-->
+
+   <!--footer-->
+   <div class="footer">
+      <div class="container">
+         <p class="credit">Copyright for MT,CHP & MovieKing.</p>
+      </div>
+   </div>
+
+   <!-- 模态框（Modal） -->
+   <div class="modal fade container" id="modal_miniMenu" tabindex="-1" role="dialog" aria-labelledby="modalLabel_miniMenu" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" 
+                  data-dismiss="modal" aria-hidden="true">
+                     &times;
+               </button>
+               <h4 class="modal-title" id="modalLabel_miniMenu">
+                  模版人名
+               </h4>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                     <button name="del_player" type="button" class="btn btn-default btn-block btn-md">删除选手
+                     </button>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                     <button type="button" class="btn btn-primary btn-block btn-md" data-dismiss="modal">关闭
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+         </div><!-- /.modal-content -->
+      </div>
+   </div><!-- /.modal -->
+
+   <div class="modal fade container" id="modal_playerList" tabindex="-1" role="dialog" aria-labelledby="modalLabel_playerList" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" 
+                  data-dismiss="modal" aria-hidden="true">
+                     &times;
+               </button>
+               <h4 class="modal-title" id="modalLabel_playerList">
+                  请勾选以下队员
+               </h4>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                     <ul class="list-group" id="grouping_ul_addPlayers">
+                        <li class="list-group-item">
+                           <input type="checkbox" name="_checkbox">真石祥仁
+                        </li>
+                        <li class="list-group-item">
+                           <input type="checkbox" name="_checkbox">真石祥仁2013
+                        </li>
+                        <li class="list-group-item">
+                           <input type="checkbox" name="_checkbox">真石祥仁2015
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-default" 
+                  data-dismiss="modal">关闭
+               </button>
+               <button type="button" name="addmate_btn" class="btn btn-primary">
+                  确认
+               </button>
+            </div>
+         </div><!-- /.modal-content -->
+      </div>
+   </div><!-- /.modal -->
+</body>
+</html>

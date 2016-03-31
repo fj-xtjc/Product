@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>登录</title>
+    <link href="css/bootstrap.min_unicom_app.css" rel="stylesheet">
+    <link href="css/unicom_controlStyles.css" rel="stylesheet">
+    <link href="skins/polaris/polaris.css" rel="stylesheet">
+
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/icheck.js"></script>
+    <script src="js/dataControl.js"></script>
+    <script src="js/product_login.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="main clearfix">
+        <div class="header">
+            <div class="container">
+                <img src="img/unicom_logo.png">
+            </div>
+        </div>
+
+        <div class="bg_unicom_app">
+            <div class="fg_unicom_app">
+
+                <div class="marquee">
+                  <span id="fg">
+                  </span>
+                </div>
+
+            </div>
+            <div class="left_unicom_app"></div>
+            <div class="right_unicom_app"></div>
+        </div>
+    <!--Page content-->
+    <div class="container">
+
+
+            <!--form_登录-->
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="Lusername" class="col-md-2 col-sm-2 col-xs-2 control-label">帐号</label>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <input type="text" class="form-control" id="Lusername" name="Lusername" placeholder="请输入登录帐号。">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Lpassword" class="col-md-2 col-sm-2 col-xs-2 control-label">密码</label>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <input type="password" class="form-control" id="Lpassword" name="Lpassword" placeholder="请输入登录密码。">
+                    </div>
+                </div>
+                <!--====================后续添加 需要添加功能=======================-->
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-md-10 col-sm-10 col-xs-10">
+                        <input type="checkbox" name="_checkbox"> 请记住我
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <button type="button" class="btn btn-default  btn-block btn-md" name="btn_login">登录</button>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <button type="button" class="btn btn-primary  btn-block btn-md" name="btn_back">返回</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+    <div class="push"></div>
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="container">
+        <p class="credit">Copyright for MT,CHP & MovieKing.</p>
+    </div>
+</div>
+
+</body>
+</html>

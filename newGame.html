@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+   <meta http-equiv=Content-Type content="text/html;charset=utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+   <title>主界面</title>
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/controlStyles.css" rel="stylesheet">
+
+   <script src="js/jquery-2.2.0.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/newGame.js"></script>
+</head>
+<body>
+   <!--wrap start-->
+   <div class="wrap">
+      <div class="main clearfix">
+         <!--Navbar-->
+         <header>
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+               <div class="container">
+                  <div class="navbar-header">
+                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                     </button>
+                     <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-home"></span>桥牌之家</a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="mainnav-collapse">
+                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="newGame.html">比赛创建</a></li>
+                        <li><a href="grouping.html">比赛分组</a></li>
+                        <li><a href="#">比赛列表</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </header>
+         <!--Page content-->
+         <div class="container">
+            <div class="row index_newGame">
+               <!--form_登录-->
+               <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                     <label for="matchname" class="col-md-3 col-sm-3 col-xs-3 control-label">比赛名</label>
+                     <div class="col-md-9 col-sm-9 col-xs-9">
+                        <input type="text" class="form-control" id="matchname" name="matchname" placeholder="请输入比赛名。">
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label for="matchteam" class="col-md-3 col-sm-3 col-xs-3 control-label">队伍数</label>
+                     <div class="col-md-9 col-sm-9 col-xs-9">
+                        <input type="text" class="form-control" id="matchteam" name="matchteam" placeholder="请输入队伍数。">
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label for="cardsnum" class="col-md-3 col-sm-3 col-xs-3 control-label">牌数</label>
+                     <div class="col-md-9 col-sm-9 col-xs-9">
+                        <input type="text" class="form-control" id="cardsnum" name="cardsnum" placeholder="请输入牌数。">
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label for="matchtime" class="col-md-3 col-sm-3 col-xs-3 control-label">开始时间</label>
+                     <div class="col-md-9 col-sm-9 col-xs-9">
+                        <input type="text" class="form-control" id="matchtime" name="matchtime" placeholder="请输入开始时间。">
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <div class="col-md-6 col-sm-6 col-xs-6">
+                        <button type="button" class="btn btn-default  btn-block btn-md" name="btn_newGame">创建</button>
+                     </div>
+                     <div class="col-md-6 col-sm-6 col-xs-6">
+                        <button type="button" class="btn btn-primary  btn-block btn-md" name="btn_newGameClean">重置</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--wrap end-->
+
+   <!--footer-->
+   <div class="footer">
+      <div class="container">
+         <p class="credit">Copyright for MT,CHP & MovieKing.</p>
+      </div>
+   </div>
+
+</body>
+</html>

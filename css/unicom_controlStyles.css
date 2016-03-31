@@ -1,0 +1,204 @@
+/*!
+*date:2016-02-18;
+*/
+html,body{
+	background-color: #fff;
+	-ms-touch-action: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+}
+/*控件*/
+.app_Logo{
+	width: 80px;
+	height: 80px;
+}
+.QR_Code{
+	height: 80px;
+	margin:5px 10px;
+}
+/*主页面*/
+.bg_unicom_app{
+	position: relative;
+	width: 100%;
+	//background: url(../img/bg_unicom.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin-bottom: 40px;
+}
+.fg_unicom_app{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.left_unicom_app{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 12%;
+	height:100%;
+	background: url(../img/left_unicom.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+.right_unicom_app{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 12%;
+	height:100%;
+	background: url(../img/right_unicom.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+.index_unicom>div{
+	padding:10px 20px;
+}
+.index_unicom button h3{
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+.index_unicom button p{
+	margin: 0px;
+	text-align: left;
+	white-space: normal;
+}
+.index_unicom button .badge{
+	margin-top:13px;
+}
+/* 定义一个走马灯动画 */
+.marquee {
+	position: absolute;
+	overflow: hidden;
+	font-weight: bold;
+	color: #EC6C00;
+	text-shadow:1px 0px 5px #fff,
+				-1px 0px 5px #fff,
+				0px 1px 5px #fff,
+				0px -1px 5px #fff,
+				6px 4px 2px #000;
+}
+
+.marquee>span {
+	display: block;
+	position: relative;
+}
+/*子页面*/
+.Style_container{
+	border: 1px solid #000;
+	border-bottom: none;
+	border-top: none;
+	padding: 0 0 20px 0;
+	background-color: #fff;
+}
+.Style_container .badge{
+	margin-right: 3px;
+}
+.Style_row1{
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #666666;
+}
+.Style_row1 h1{
+	color: #fff;
+}
+.Style_row1 #info_QR>img{
+	border: 5px solid #fff;
+}
+.Style_row2{
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 0px;
+
+}
+.Style_row2 .Style_info_description{
+	font-size: 20px;
+	height: 400px;
+	overflow:auto;
+}
+.carousel{
+	border:1px solid #000;
+}
+.carousel img{
+	margin: 0px auto;
+	height: 500px;
+}
+.bg_unicom_app_info_top{
+	height: 40px;
+}
+/*自适应布局*/
+html,body,.wrap{height: 100%;}
+body>.wrap{
+	height: auto;
+	min-height: 100%;
+	background-color: #303030;
+	background-image: -moz-linear-gradient(top, #303030, #fefefe); /* Firefox */
+	background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0, #303030),color-stop(0.5,#666666), color-stop(1, #fefefe)); /* Saf4+, Chrome */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#303030', endColorstr='#666666', GradientType='0'); /* IE*/
+}
+.header{
+	width: 100%;
+	height: 80px;
+	background-color:#EC6C00;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	z-index: 1050;
+}
+.header img{
+	height: 80px;
+}
+.main{
+	padding-bottom: 50px;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+.footer{
+	position: relative;
+	margin-top: -50px;
+	height: 50px;
+	clear: both;
+}
+.footer .credit {
+	margin: 15px 0;
+}
+/*margin*/
+.no-btm-margin{
+	margin-bottom: 0px;
+}
+.no-top-margin{
+	margin-top: 0px;
+}
+/*color*/
+.font_color_white{
+	color:#fff;
+}
+.bg_badge0{
+	background-color: #4fc5c7;
+}
+.bg_badge1{
+	background-color: #97ec71;
+}
+.bg_badge2{
+	background-color: #dbf977;
+}
+.bg_badge3{
+	background-color: #de9dd6;
+}
+.bg_badge4{
+	background-color: #fa6e86;
+}

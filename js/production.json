@@ -1,0 +1,171 @@
+[
+  {
+    "app":["XSZL","HYT","XFGC","GZZL","WJZS","QYYJ","ZHYY"]
+  },
+  {
+    "XSZL": {
+      "app_name": "销售助理",
+      "logo_url": "XSZL_LOGO.png",
+      "tag": [
+        "移动考勤",
+        "经营分析"
+      ],
+      "describtion": "销售助理是一款为企业客户提供管理销售人员的软件。销售人员通过手机即可实现签单、收款、发货、客户拜访、数据统计等工作，为销售人员提供商品信息库、客户资源库、销售资料库。企业管理者能够实时掌控销售人员状态、产品销量等一线市场数据。",
+      "QR_url": [
+        "XSZL_QR_IOS.png",
+        "XSZL_QR_Android.png"
+      ],
+      "install_url":["SalesAssis20160322.ipa","xszl_fj.apk"],
+      "fuction_png_url": 3,
+      "file_url":["03销售助理.ppt","销售助理解决方案.doc"],
+      "user_pc_url":{
+        "login":"http://210.13.199.108/t/login.aspx",
+        "username":"administrator",
+        "password":"123456",
+        "id":"639628"},
+      "user_admin_url":"",
+      "product_admin_url":{
+        "login":"http://210.13.199.109:8001/Login.aspx",
+        "username":"18639551003",
+        "password":"18639550223",
+        "id":"605378"}
+    },
+    "HYT":{
+      "app_name": "会议通",
+      "logo_url": "HYT_LOGO.png",
+      "tag": [
+        "组织会议",
+        "移动签到",
+        "电子资料"
+      ],
+      "describtion": "会议通是为政府、企业、事业单位提供会议组织和会议资料管理的系统。会议组织者通过该系统，可以创建、发布会议信息，导入参会人员名单及联系方式，通过短信群发的方式给参会人员发送会议通知以及参会相关事项。",
+      "QR_url": [
+        "HYT_QR_IOS.png",
+        "HYT_QR_Android.png"
+      ],
+      "install_url":["",""],
+      "fuction_png_url": 3,
+      "file_url":["会议通产品方案.docx"],
+      "user_pc_url":{
+        "login":"http://210.13.199.108:7878/testmeet/login.do",
+        "username":"admin",
+        "password":"123456"},
+      "user_admin_url":"",
+      "product_admin_url":""
+    },
+    "XFGC":{
+      "app_name": "幸福工厂",
+      "logo_url": "XFGC_LOGO.png",
+      "tag": [
+        "员工娱乐",
+        "员工交流"
+      ],
+      "describtion": "幸福工厂是为工厂工人提供互联网资源聚合、分享的软件。<br/>工厂工人通过软件可以使用定向流量查看新闻、热门视频、玩游戏、使用微信等软件、查看招聘信息、浏览热门论坛信息。<br/>工厂管理者可以在网上组织活动，对员工的上网行为进行管理，降低安全隐患。",
+      "QR_url": [
+        "HYT_QR_IOS.png",
+        "HYT_QR_IOS.png"
+      ],
+      "install_url":["","xfgc_fj.apk"],
+      "fuction_png_url": 1,
+      "file_url":[],
+      "user_pc_url":{
+        "login":"http://210.13.199.110:7070/ZMJT",
+        "username":"admin",
+        "password":"123456"},
+      "user_admin_url":"",
+      "product_admin_url":""
+    },
+    "GZZL":{
+      "app_name": "工作助理",
+      "logo_url": "GZZL_LOGO.png",
+      "tag": [
+        "手机考勤",
+        "移动办公",
+        "信息发布"
+      ],
+      "describtion": "工作助理是为企业客户提供团队工作管理信息化的解决方案。<br/>企业管理者通过电脑浏览器可以创建通知信息，通过短信群发、内部微信的方式给员工发送工作要求。<br/>企业员工通过手机应用可随时收到通知公告、查通讯录、发内部微信、添加客户信息、填写工作任务、手机考勤等功能。",
+      "QR_url": [
+        "HYT_QR_IOS.png",
+        "HYT_QR_IOS.png"
+      ],
+      "install_url":["SalesAssis20160322.ipa","xszl_fj.apk"],
+      "fuction_png_url": 2,
+      "file_url":[],
+      "user_pc_url":{
+        "login":"http://210.13.199.110:7070/ZMJT",
+        "username":"admin",
+        "password":"123456"},
+      "user_admin_url":"",
+      "product_admin_url":""
+    },
+    "WJZS":{
+      "app_name": "卫监助手",
+      "logo_url": "WJZS_LOGO.png",
+      "tag": [
+        "移动巡检",
+        "上报统计",
+        "信息反馈"
+      ],
+      "describtion": "卫监助手是为卫生监督部门提供对外勤监督员实现工作管理的手机应用系统。<br/>卫生监督人员可以在公共场所，学校卫生，医疗机构进行日常巡查，上报并查看巡查任务。<br/>卫生监督管理者可以通过平台查看巡查任务的完成情况统计，以及本机构巡查任务完成情况。",
+      "QR_url": [
+        "HYT_QR_IOS.png",
+        "HYT_QR_IOS.png"
+      ],
+      "install_url":["wjzs_fj.ipa","wjzs_fj.apk"],
+      "fuction_png_url": 1,
+      "file_url":[],
+      "user_pc_url":{
+        "login":"http://210.13.199.108:7070/hbwjj",
+        "username":"18537111111",
+        "password":"xtjc365"},
+      "user_admin_url":"",
+      "product_admin_url":""
+    },
+    "QYYJ": {
+      "app_name": "企业远教",
+      "logo_url": "QYYJ_LOGO.png",
+      "tag": [
+        "人员管理",
+        "远程教育"
+      ],
+      "describtion": "企业远教是为企事业单位的基层党员组织提供远程教育的系统。<br/>管理人员可以通过系统进行信息发布，信息管理，教育课件管理，视频发布等等。<br/>基层党员可通过手机终端了解企业动态、支部生活、接受党员教育、实现远程考试等等，并可丰富企业文化生活。",
+      "QR_url": [
+        "HYT_QR_IOS.png",
+        "HYT_QR_IOS.png"
+      ],
+      "install_url":["","sjyj_fj.apk"],
+      "fuction_png_url": 1,
+      "file_url":[],
+      "user_pc_url":{
+        "login":"http://210.13.199.110:7070/ZMJT",
+        "username":"admin",
+        "password":"123456"},
+      "user_admin_url":"",
+      "product_admin_url":""
+    },
+    "ZHYY": {
+      "app_name": "智慧医院",
+      "logo_url": "ZHYY_LOGO.png",
+      "tag": [
+        "移动办公",
+        "院长查询",
+        "移动监控",
+        "智慧查房"
+      ],
+      "describtion": "智慧医院是为医院提供内部工作人员的工作管理及移动办公的系统。<br/>院方可以通过系统可以实时查看当前医院经营情况、病房情况、医生的工作情况等信息。<br/>医务人员可以通过手机终端实现移动办公、智慧查房、病房监控等工作。<br/>该软件可以和医院在用信息化系统互联，扩展医院办公系统的应用范围。",
+      "QR_url": [
+        "HYT_QR_IOS.png",
+        "HYT_QR_IOS.png"
+      ],
+      "install_url":["zhyy.ipa","zhyy_fj.apk"],
+      "fuction_png_url": 1,
+      "file_url":[],
+      "user_pc_url":{
+        "login":"http://210.13.199.110:8088/beapp",
+        "username":"admin",
+        "password":"111111"},
+      "user_admin_url":"http://210.13.199.110:8080/oa",
+      "product_admin_url":""
+    }
+  }
+]
