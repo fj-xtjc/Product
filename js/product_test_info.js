@@ -43,17 +43,20 @@ function Product_Html(product_name,userkey){
                 }
             }
             $("#info_description").append('<div class="Style_info_description" id="download"></div>');
-            $("#download").append('<strong>用户测试地址：</strong>')
+            $("#download").append('<strong>用户测试地址：</strong>');
             if(production[1][product_name].user_pc_url.login!="") {
                     $('<a>').attr("href", production[1][product_name].user_pc_url.login).attr("target","_blank").html(production[1][product_name].user_pc_url.login).appendTo("#download");
                     $("#download").append('<br/>');
                 }
             $("#download").append('<strong>测试帐号：'+production[1][product_name].user_pc_url.username+'</strong><br/>'
                 +'<strong>测试密码：'+production[1][product_name].user_pc_url.password+'</strong><br/>');
-            if(product_name=="XSZL"){
-                $("#download").append('<strong>企业前台id：'+production[1][product_name].user_pc_url.id+'</strong><br/>');
+            if(product_name=="XSZL") {
+                $("#download").append('<strong>企业前台id：' + production[1][product_name].user_pc_url.id + '</strong><br/>');
             }
-            if(userkey=="1") {
+                if(product_name=="GZZL"){
+                    $("#download").append('<strong>单位帐号：'+production[1][product_name].user_pc_url.company+'</strong><br/>');
+            }
+            if(userkey==1) {
                 $("#download").append('<br/><strong>联通管理后台地址：</strong>')
                 if (production[1][product_name].product_admin_url.login != "") {
                     $('<a>').attr("href", production[1][product_name].product_admin_url.login).attr("target", "_blank").html(production[1][product_name].product_admin_url.login).appendTo("#download");
@@ -62,15 +65,53 @@ function Product_Html(product_name,userkey){
                 $("#download").append('<strong>管理员帐号：' + production[1][product_name].product_admin_url.username + '</strong><br/>'
                     + '<strong>管理员密码：' + production[1][product_name].product_admin_url.password + '</strong><br/>');
                 if (product_name == "XSZL") {
-                    $("#download").append('<strong>后台id：' + production[1][product_name].user_pc_url.id + '</strong><br/>');
+                    $("#download").append('<strong>后台id：' + production[1][product_name].product_admin_url.id + '</strong><br/>');
+                }
+                if(product_name=="GZZL") {
+                    $("#download").append('<strong>单位帐号：' + production[1][product_name].product_admin_url.company + '</strong><br/>');
                 }
             }
-
             $("#download").append('<br/><strong>产品文档下载：</strong><br/>');
-            for(var i=0;i<production[1][product_name].file_url.length;i++){
-                if(production[1][product_name].file_url[i]!="") {
-                    $('<a>').attr("href", "file/" + product_name + "/" + production[1][product_name].file_url[i]).html(production[1][product_name].file_url[i]).appendTo("#download");
-                    $("#download").append('<br/>');
+            if(userkey==1) {
+                for (var i = 0; i < production[1][product_name].file_url.xtjc.length; i++) {
+                    if (production[1][product_name].file_url.xtjc[i] != "") {
+                        $('<a>').attr("href", "file/" + product_name + "/" + production[1][product_name].file_url.xtjc[i]).html(production[1][product_name].file_url.xtjc[i]).appendTo("#download");
+                        $("#download").append('<br/>');
+                    }
+                }
+                for (var i = 0; i < production[1][product_name].file_url.unicom.length; i++) {
+                    if (production[1][product_name].file_url.unicom[i] != "") {
+                        $('<a>').attr("href", "file/" + product_name + "/" + production[1][product_name].file_url.unicom[i]).html(production[1][product_name].file_url.unicom[i]).appendTo("#download");
+                        $("#download").append('<br/>');
+                    }
+                }
+                for (var i = 0; i < production[1][product_name].file_url.client.length; i++) {
+                    if (production[1][product_name].file_url.client[i] != "") {
+                        $('<a>').attr("href", "file/" + product_name + "/" + production[1][product_name].file_url.client[i]).html(production[1][product_name].file_url.client[i]).appendTo("#download");
+                        $("#download").append('<br/>');
+                    }
+                }
+            }
+            else if(userkey==2) {
+                for (var i = 0; i < production[1][product_name].file_url.unicom.length; i++) {
+                    if (production[1][product_name].file_url.unicom[i] != "") {
+                        $('<a>').attr("href", "file/" + product_name + "/" + production[1][product_name].file_url.unicom[i]).html(production[1][product_name].file_url.unicom[i]).appendTo("#download");
+                        $("#download").append('<br/>');
+                    }
+                }
+                for (var i = 0; i < production[1][product_name].file_url.client.length; i++) {
+                    if (production[1][product_name].file_url.client[i] != "") {
+                        $('<a>').attr("href", "file/" + product_name + "/" + production[1][product_name].file_url.client[i]).html(production[1][product_name].file_url.client[i]).appendTo("#download");
+                        $("#download").append('<br/>');
+                    }
+                }
+            }
+            else if(userkey==3){
+                for (var i = 0; i < production[1][product_name].file_url.client.length; i++) {
+                    if (production[1][product_name].file_url.client[i] != "") {
+                        $('<a>').attr("href", "file/" + product_name + "/" + production[1][product_name].file_url.client[i]).html(production[1][product_name].file_url.client[i]).appendTo("#download");
+                        $("#download").append('<br/>');
+                    }
                 }
             }
         },
@@ -82,5 +123,18 @@ function Product_Html(product_name,userkey){
 $(document).ready(function(){
     //alert($.getUrlParam('page'));
     var userkey=$.getUrlParam('userkey');
-    Product_Html($.getUrlParam('page'),1);
+    if(userkey==1) {
+        $("#user_container").append('<label  class="col-md-2 col-sm-2 col-xs-2 control-label">你好！产品管理部 '+ $.session.get('username')+'</label>');
+    }
+    else if(userkey==2){
+        $("#user_container").append('<label  class="col-md-2 col-sm-2 col-xs-2 control-label">你好！市分 '+ $.session.get('username')+'</label>');
+    }
+    else if(userkey==3){
+        $("#user_container").append('<label  class="col-md-2 col-sm-2 col-xs-2 control-label">你好！用户 '+ $.session.get('username')+'</label>');
+    }
+    $('a[name="logout"]').click(function(){
+        $.session.clear();
+    });
+    $("#user_container").append('<a href="product_login.html" name="logout">退出</a>');
+    Product_Html($.getUrlParam('page'),userkey);
 });

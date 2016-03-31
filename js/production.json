@@ -17,7 +17,10 @@
       ],
       "install_url":["SalesAssis20160322.ipa","xszl_fj.apk"],
       "fuction_png_url": 3,
-      "file_url":["03销售助理.ppt","销售助理解决方案.doc"],
+      "file_url": {
+         "xtjc":["销售助理解决方案.doc"],
+         "unicom":["销售助理产品手册.doc"],
+         "client":["产品介绍"]},
       "user_pc_url":{
         "login":"http://210.13.199.108/t/login.aspx",
         "username":"administrator",
@@ -45,7 +48,10 @@
       ],
       "install_url":["",""],
       "fuction_png_url": 3,
-      "file_url":["会议通产品方案.docx"],
+      "file_url":{
+        "xtjc":["会议通产品方案.docx","会议通解决方案福建--V1.0.doc"],
+        "unicom":["会议通产品手册.doc"],
+        "client":["产品介绍"]},
       "user_pc_url":{
         "login":"http://210.13.199.108:7878/testmeet/login.do",
         "username":"admin",
@@ -67,7 +73,10 @@
       ],
       "install_url":["","xfgc_fj.apk"],
       "fuction_png_url": 1,
-      "file_url":[],
+      "file_url":{
+        "xtjc":["幸福工厂建设方案v20140806.doc"],
+        "unicom":["幸福工厂产品说明书.doc"],
+        "client":["产品介绍"]},
       "user_pc_url":{
         "login":"http://210.13.199.110:7070/ZMJT",
         "username":"admin",
@@ -88,15 +97,23 @@
         "HYT_QR_IOS.png",
         "HYT_QR_IOS.png"
       ],
-      "install_url":["SalesAssis20160322.ipa","xszl_fj.apk"],
+      "install_url":["","gzzl_fj.apk"],
       "fuction_png_url": 2,
-      "file_url":[],
+      "file_url":{
+        "xtjc":["工作助理解决方案.doc"],
+        "unicom":["工作助理产品手册.doc"],
+        "client":["产品介绍"]},
       "user_pc_url":{
-        "login":"http://210.13.199.110:7070/ZMJT",
+        "login":"http://210.13.199.110/",
+        "company":"system",
         "username":"admin",
-        "password":"123456"},
+        "password":"111111"},
       "user_admin_url":"",
-      "product_admin_url":""
+      "product_admin_url":{
+        "login":"http://210.13.199.110/",
+        "company":"fjxtjc",
+        "username":"admin",
+        "password":"123456"}
     },
     "WJZS":{
       "app_name": "卫监助手",
@@ -113,7 +130,10 @@
       ],
       "install_url":["wjzs_fj.ipa","wjzs_fj.apk"],
       "fuction_png_url": 1,
-      "file_url":[],
+      "file_url":{
+        "xtjc":["卫监助手技术解决方案.doc"],
+        "unicom":["卫监助手产品手册.doc"],
+        "client":["卫监助手产品解说词.doc"]},
       "user_pc_url":{
         "login":"http://210.13.199.108:7070/hbwjj",
         "username":"18537111111",
@@ -135,7 +155,10 @@
       ],
       "install_url":["","sjyj_fj.apk"],
       "fuction_png_url": 1,
-      "file_url":[],
+      "file_url":{
+        "xtjc":["手机远教解决方案.doc"],
+        "unicom":["手机远教产品手册.doc"],
+        "client":["产品介绍.doc"]},
       "user_pc_url":{
         "login":"http://210.13.199.110:7070/ZMJT",
         "username":"admin",
@@ -159,7 +182,10 @@
       ],
       "install_url":["zhyy.ipa","zhyy_fj.apk"],
       "fuction_png_url": 1,
-      "file_url":[],
+      "file_url":{
+        "xtjc":["联通智慧医院解决方案v2.doc"],
+        "unicom":["智慧医院产品手册.doc"],
+        "client":["产品介绍.doc"]},
       "user_pc_url":{
         "login":"http://210.13.199.110:8088/beapp",
         "username":"admin",

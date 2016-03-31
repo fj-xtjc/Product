@@ -25,8 +25,8 @@ $(document).ready(function() {
                 url: "http://10.206.106.27/User/usermanager/login.do",
                 data: {
                     appid:1,
-                    Lusername: $("input[name='Lusername']").val(),
-                    Lpassword: $("input[name='Lpassword']").val()
+                    username: $("input[name='Lusername']").val(),
+                    userpassword: $("input[name='Lpassword']").val()
                 },
                 dataType: "jsonp",
                 jsonp: "callbackparam",

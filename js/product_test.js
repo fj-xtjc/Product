@@ -23,6 +23,20 @@ $(document).ready(function(){
 
     //加载窗口变化方法
     $(window).resize();
+    var userkey=$.getUrlParam('userkey');
+    if(userkey==1) {
+        $("#user_container").append('<label  class="col-md-2 col-sm-2 col-xs-2 control-label">你好！产品管理部 '+ $.session.get('username')+'</label>');
+    }
+    else if(userkey==2){
+        $("#user_container").append('<label  class="col-md-2 col-sm-2 col-xs-2 control-label">你好！市分 '+ $.session.get('username')+'</label>');
+    }
+    else if(userkey==3){
+        $("#user_container").append('<label  class="col-md-2 col-sm-2 col-xs-2 control-label">你好！用户 '+ $.session.get('username')+'</label>');
+    }
+    $('a[name="logout"]').click(function(){
+        $.session.clear();
+    });
+    $("#user_container").append('<a href="product_login.html" name="logout">退出</a>');
     $("#index_unicom").html("");
     $.ajax({
         type:"get",
@@ -40,6 +54,6 @@ $(document).ready(function(){
     });
 
     $("button[data-appInfo]").click(function() {
-        location.href = "product_test_info.html?page=" + $(this).attr('name')+"&userkey="+$.getUrlParam('userkey');
+        location.href = "product_test_info.html?page=" + $(this).attr('name')+"&userkey="+userkey;
     });
 });
